@@ -1,0 +1,133 @@
+export interface SectorMeta {
+  id: string
+  name: string
+  nameCn: string
+  etf: string
+  icon: string
+  color: string
+  description: string
+  subIndustries: string[]
+}
+
+export const sectorsMeta: SectorMeta[] = [
+  {
+    id: 'food-beverage',
+    name: 'Food & Beverage',
+    nameCn: '食品饮料',
+    etf: '515170',
+    icon: '🍶',
+    color: '#DC2626',
+    description: '涵盖白酒、乳制品、调味品、休闲食品等消费品行业。具有强品牌护城河和高ROE特征，穿越周期的防御性板块。白酒是A股最具特色的核心资产。',
+    subIndustries: ['白酒', '乳制品', '调味品', '休闲食品', '啤酒'],
+  },
+  {
+    id: 'healthcare',
+    name: 'Healthcare',
+    nameCn: '医药生物',
+    etf: '512170',
+    icon: '💊',
+    color: '#059669',
+    description: '包括化学制药、生物制品、医疗器械和CXO。人口老龄化、创新药研发和国产替代是核心驱动力，长期成长性确定的优质赛道。',
+    subIndustries: ['化学制药', '生物制品', '医疗器械', 'CXO', '中药'],
+  },
+  {
+    id: 'electronics',
+    name: 'Electronics',
+    nameCn: '电子',
+    etf: '159732',
+    icon: '💻',
+    color: '#6366F1',
+    description: '涵盖半导体、消费电子、面板和被动元件。国产替代和AI算力需求是核心主题，政策支持力度大，是中国制造业升级的核心战场。',
+    subIndustries: ['半导体', '消费电子', '面板', '被动元件'],
+  },
+  {
+    id: 'power-equipment',
+    name: 'Power Equipment',
+    nameCn: '电力设备',
+    etf: '516880',
+    icon: '🔋',
+    color: '#F59E0B',
+    description: '包括新能源发电（光伏、风电）、锂电池、电力设备。碳中和目标驱动，全球能源转型的核心受益板块，出口和海外建厂是新的增长极。',
+    subIndustries: ['光伏', '锂电池', '风电', '电力设备'],
+  },
+  {
+    id: 'banking',
+    name: 'Banking',
+    nameCn: '银行',
+    etf: '512800',
+    icon: '🏦',
+    color: '#1D4ED8',
+    description: '涵盖五大国有大型商业银行和头部股份制银行。高股息、低估值，是市场压舱石。净息差和资产质量是核心观察指标。',
+    subIndustries: ['国有大行', '股份制银行', '城商行'],
+  },
+  {
+    id: 'nonbank-financials',
+    name: 'Non-Bank Financials',
+    nameCn: '非银金融',
+    etf: '512880',
+    icon: '📈',
+    color: '#EA580C',
+    description: '包括券商、保险和金融科技。券商业绩高度依赖市场成交量和IPO节奏，是牛市的急先锋，弹性大、波动性强。',
+    subIndustries: ['证券', '保险', '金融科技'],
+  },
+  {
+    id: 'automotive',
+    name: 'Automotive',
+    nameCn: '汽车',
+    etf: '516110',
+    icon: '🚗',
+    color: '#0891B2',
+    description: '涵盖整车制造（含新能源汽车）和零部件。受益于电动化和智能化转型，中国车企正在全球范围内崛起，出口量持续高增。',
+    subIndustries: ['整车', '新能源汽车', '零部件'],
+  },
+  {
+    id: 'it-software',
+    name: 'IT & Software',
+    nameCn: '计算机',
+    etf: '512720',
+    icon: '🖥️',
+    color: '#7C3AED',
+    description: '包括软件、云计算、人工智能和信创。国产替代和数字经济是核心主线，AI大模型和SaaS是未来增长引擎。',
+    subIndustries: ['软件', '云计算', '人工智能', '信创'],
+  },
+  {
+    id: 'real-estate',
+    name: 'Real Estate',
+    nameCn: '房地产',
+    etf: '512200',
+    icon: '🏠',
+    color: '#78716C',
+    description: '涵盖住宅开发、商业地产和物业管理。政策周期的核心板块，经历深度调整后向新发展模式转型，关注优质龙头复苏机会。',
+    subIndustries: ['住宅开发', '商业地产', '物业管理'],
+  },
+  {
+    id: 'chemicals',
+    name: 'Chemicals',
+    nameCn: '基础化工',
+    etf: '516020',
+    icon: '🧪',
+    color: '#B45309',
+    description: '包括化工原料、新材料、农药化肥和精细化工。受益于产业链向中国转移和国产替代，新材料方向是高成长赛道。',
+    subIndustries: ['化工原料', '新材料', '农药化肥', '精细化工'],
+  },
+  {
+    id: 'metals',
+    name: 'Non-ferrous Metals',
+    nameCn: '有色金属',
+    etf: '512400',
+    icon: '🪙',
+    color: '#CA8A04',
+    description: '涵盖铜、铝、黄金、锂钴和稀土等战略资源。与全球制造业景气度和新能源需求高度相关，稀土和锂是新能源上游核心原料。',
+    subIndustries: ['铜', '铝', '黄金', '锂钴', '稀土'],
+  },
+  {
+    id: 'defense',
+    name: 'Defense & Aerospace',
+    nameCn: '国防军工',
+    etf: '512670',
+    icon: '🛡️',
+    color: '#0EA5E9',
+    description: '包括航空航天、军用电子和船舶制造。国防预算稳定增长、装备升级换代是核心驱动力，具有强政策壁垒和技术壁垒。',
+    subIndustries: ['航空航天', '军用电子', '船舶制造', '兵器装备'],
+  },
+]
